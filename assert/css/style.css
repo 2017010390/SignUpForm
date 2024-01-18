@@ -1,0 +1,105 @@
+:root {
+    --color-btn-createAccount: #596D48;
+    --color-input-border: #E5E7EB;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.signup-container {
+    display: flex;
+}
+.image-container {
+    width: 40vw;
+    height: 100vh;
+    & img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 60vw;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.recommend {
+    margin-top: 150px;
+    padding-left: 60px;
+    width: 47vw;
+    margin-bottom: 50px;
+    & .headline {
+        font-size: 30px;
+    }
+}
+
+.form {
+    justify-self: center;
+}
+
+fieldset {
+    height: 30vh;
+    border: 0px;
+    padding-left: 60px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0px 7px 15px #aaaaaa;
+    & legend {
+        margin-bottom: 10px;
+    }
+    & div {
+        display: flex;
+        gap: 100px;
+        & div {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+    }
+}
+
+input {
+    border: 2px solid var(--color-input-border);
+    border-radius: 5px;
+    height: 35px;
+    width: 350px;
+    font-size: 20px;
+}
+
+input:focus {
+    outline: none !important;
+}
+.btn-create {
+    margin-left: 60px;
+    margin-top: calc(60px / 2);
+    height: 60px;
+    width: 300px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border: 0px;
+    background-color: var(--color-btn-createAccount);
+    box-shadow: 4px 4px 8px 2px #d3d2d2;
+}
+.shadow {
+    height: 10px;
+    width: 60vw;
+    background-image: linear-gradient(rbg(214,214,214),#ffffff);
+}
+.login {
+    padding-left: 60px;
+    & p a {
+        text-decoration: none;
+        color: var(--color-btn-createAccount);
+    }
+}
